@@ -10,7 +10,7 @@ const gui = new dat.GUI()
 const canvas = document.querySelector('canvas.webgl')
 
 // Scene
-const scene = new THREE.Scene()
+const scene1 = new THREE.Scene()
 
 // Objects
 const geometry = new THREE.TorusGeometry( .7, .2, 16, 100 );
@@ -22,7 +22,7 @@ material.color = new THREE.Color(0xff0000)
 
 // Mesh
 const sphere = new THREE.Mesh(geometry,material)
-scene.add(sphere)
+scene1.add(sphere)
 
 // Lights
 
@@ -30,7 +30,7 @@ const pointLight = new THREE.PointLight(0xffffff, 0.1)
 pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
-scene.add(pointLight)
+scene1.add(pointLight)
 
 /**
  * Sizes
@@ -63,7 +63,7 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 
 camera.position.x = 0
 camera.position.y = 0
 camera.position.z = 2
-scene.add(camera)
+scene1.add(camera)
 
 // Controls
 // const controls = new OrbitControls(camera, canvas)
@@ -96,7 +96,7 @@ const tick = () =>
     // controls.update()
 
     // Render
-    renderer.render(scene, camera)
+    renderer.render(scene1, camera)
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)

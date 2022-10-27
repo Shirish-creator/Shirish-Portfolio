@@ -1,7 +1,10 @@
 {
+  "homepage": "http://Shirish-creator.github.io/Shirish-Portfolio",
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
@@ -26,6 +29,7 @@
     "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",

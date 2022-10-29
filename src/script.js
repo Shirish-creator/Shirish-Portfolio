@@ -1,12 +1,14 @@
-import './scss/style.scss'
-import * as THREE from 'three'
+import './scss/style.scss';
+import * as THREE from 'three';
 // import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import * as dat from 'dat.gui'
+import * as dat from 'dat.gui';
+import normal from "./assets/textures/Normal.png"
+import height from "./assets/textures/Height.jpg"
 
 //---------------------------------------- V A R I A B L E S --------------------------------------------------------
 const textureLoader=new THREE.TextureLoader()
-const normalTextureMap=textureLoader.load('./Normal.png');
-const heightTextureMap=textureLoader.load('./Height.jpg')
+const normalTextureMap=textureLoader.load(normal);
+const heightTextureMap=textureLoader.load(height)
 console.log(normalTextureMap);
 
 

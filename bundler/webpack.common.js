@@ -30,26 +30,7 @@ module.exports = {
         
         [
 
-            {
-                test:/\.(png|jpg|gif|svg)$/,
-                // type:"asset/resource",
-                // loader:'file-loader',
-                // options:{
-                //     name:'[name].[ext]',
-                //     outputPath:"images",
-                //     publicPath:"images",
-                //     emitFile:true,
-                //     esModule:false,
-                // }
-                use:{
-                    loader:"file-loader",
-                    options:{
-                        name:"[name].[hash:6].[ext]",
-                        publicPath:"images",
-                    }
-                }
 
-            },
             // HTML
             {
                 test: /\.(html)$/,
@@ -77,20 +58,29 @@ module.exports = {
                 ]
             },
 
-            // Images
+            //imagenew
             {
-                test: /\.(jpg|png|gif|svg)$/,
-                use:
-                [
-                    {
-                        loader: 'file-loader',
-                        options:
-                        {
-                            outputPath: 'assets/images/'
-                        }
-                    }
-                ]
+                test: /\.(png|jpe?g|gif)$/,
+                loader: 'file-loader',
+                options: {
+                  outputPath: 'assets/images/',
+                },
             },
+
+            // // Images
+            // {
+            //     test: /\.(jpg|png|gif|svg)$/,
+            //     use:
+            //     [
+            //         {
+            //             loader: 'file-loader',
+            //             options:
+            //             {
+            //                 outputPath: 'assets/images/'
+            //             }
+            //         }
+            //     ]
+            // },
 
             // Fonts
             {

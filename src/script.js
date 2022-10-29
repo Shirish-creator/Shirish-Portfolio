@@ -1,7 +1,13 @@
 import './scss/style.scss'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+
+//---------------------------------------- V A R I A B L E S --------------------------------------------------------
+const textureLoader=new THREE.TextureLoader()
+
+// const normalTextureMap=textureLoader.load('assets/textures/Normal.png')
+console.log(textureLoader);
+
 
 // Debug
 const gui = new dat.GUI()
@@ -13,11 +19,12 @@ const canvas = document.querySelector('canvas.webgl')
 const scene1 = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.TorusGeometry( .7, .2, 16, 100 );
+const geometry = new THREE.SphereGeometry( 10,100,200);
+geometry.scale(0.08,0.08,0.08)
 
 // Materials
 
-const material = new THREE.MeshBasicMaterial()
+const material = new THREE.MeshStandardMaterial()
 material.color = new THREE.Color(0xff0000)
 
 // Mesh
@@ -26,7 +33,7 @@ scene1.add(sphere)
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff, 0.1)
+const pointLight = new THREE.PointLight(0xFB722E, 1)
 pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
@@ -66,8 +73,7 @@ camera.position.z = 2
 scene1.add(camera)
 
 // Controls
-const controls = new OrbitControls(camera, canvas)
-controls.enableDamping = true
+
 
 /**
  * Renderer
@@ -93,7 +99,7 @@ const tick = () =>
     // sphere.rotation.y = .5 * elapsedTime
 
     // Update Orbital Controls
-    controls.update()
+    // controls.update()
 
     // Render
     renderer.render(scene1, camera)

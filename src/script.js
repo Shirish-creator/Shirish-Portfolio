@@ -13,7 +13,7 @@ console.log(normalTextureMap);
 //----- modification to the textures-----------
 normalTextureMap.wrapS = THREE.RepeatWrapping;
 normalTextureMap.wrapT = THREE.RepeatWrapping;
-normalTextureMap.repeat.set(8,8);
+normalTextureMap.repeat.set(10,10);
 
 
 // Debug
@@ -35,8 +35,8 @@ geometry.scale(0.08,0.08,0.08)
 const material = new THREE.MeshStandardMaterial()
 material.color = new THREE.Color(0x00000)
 // var material=new THREE.MeshStandardMaterial();
-material.metalness=0.2;
-material.roughness=0.08;
+material.metalness=0.463;
+material.roughness=0.272;
 material.normalMap=normalTextureMap;
 
 material.heightTextureMap=heightTextureMap;
@@ -49,7 +49,7 @@ scene1.add(sphere)
 
 //-----------This is initial point light
 
-const pointLight1 = new THREE.PointLight(0xFB722E, 500)
+const pointLight1 = new THREE.PointLight(0xFB722E, 50)
 pointLight1.position.x = 5.7
 pointLight1.position.y = 7
 pointLight1.position.z = -3.1
@@ -57,7 +57,7 @@ scene1.add(pointLight1)
 
 //-----------This is initial point light
 
-const pointLight2 = new THREE.PointLight(0xC25FFD, 900)
+const pointLight2 = new THREE.PointLight(0xC25FFD, 50)
 pointLight2.position.x = -100
 pointLight2.position.y = 7
 pointLight2.position.z = -3.1

@@ -58,7 +58,7 @@ module.exports = {
                 ]
             },
 
-            //imagenew
+            //Images
             {
                 test: /\.(png|jpe?g|gif)$/,
                 loader: 'file-loader',
@@ -67,20 +67,7 @@ module.exports = {
                 },
             },
 
-            // // Images
-            // {
-            //     test: /\.(jpg|png|gif|svg)$/,
-            //     use:
-            //     [
-            //         {
-            //             loader: 'file-loader',
-            //             options:
-            //             {
-            //                 outputPath: 'assets/images/'
-            //             }
-            //         }
-            //     ]
-            // },
+        
 
             // Fonts
             {

@@ -5,6 +5,10 @@ import * as dat from 'dat.gui';
 import normal from "./assets/textures/Normal.png"
 import height from "./assets/textures/Height.jpg"
 
+
+
+
+
 //---------------------------------------- V A R I A B L E S --------------------------------------------------------
 const textureLoader=new THREE.TextureLoader()
 const normalTextureMap=textureLoader.load(normal);

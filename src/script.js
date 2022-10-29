@@ -66,8 +66,8 @@ camera.position.z = 2
 scene1.add(camera)
 
 // Controls
-// const controls = new OrbitControls(camera, canvas)
-// controls.enableDamping = true
+const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = true
 
 /**
  * Renderer
@@ -93,7 +93,7 @@ const tick = () =>
     // sphere.rotation.y = .5 * elapsedTime
 
     // Update Orbital Controls
-    // controls.update()
+    controls.update()
 
     // Render
     renderer.render(scene1, camera)

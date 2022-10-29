@@ -5,8 +5,8 @@ import * as dat from 'dat.gui'
 
 //---------------------------------------- V A R I A B L E S --------------------------------------------------------
 const textureLoader=new THREE.TextureLoader()
-const normalTextureMap=textureLoader.load('.././assets/textures/Normal.png');
-const heightTextureMap=textureLoader.load('.././assets/textures/Normal.png')
+const normalTextureMap=textureLoader.load('./Normal.png');
+const heightTextureMap=textureLoader.load('./Height.jpg')
 console.log(normalTextureMap);
 
 

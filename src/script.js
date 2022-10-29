@@ -1,16 +1,23 @@
 import './scss/style.scss'
 import * as THREE from 'three'
+// import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import * as dat from 'dat.gui'
 
 //---------------------------------------- V A R I A B L E S --------------------------------------------------------
 const textureLoader=new THREE.TextureLoader()
+const normalTextureMap=textureLoader.load('./assets/textures/Normal.png');
+const heightTextureMap=textureLoader.load('./assets/textures/Height.jpg')
 
-// const normalTextureMap=textureLoader.load('assets/textures/Normal.png')
-console.log(textureLoader);
+
+//----- modification to the textures-----------
+normalTextureMap.wrapS = THREE.RepeatWrapping;
+normalTextureMap.wrapT = THREE.RepeatWrapping;
+normalTextureMap.repeat.set(8,8);
 
 
 // Debug
 const gui = new dat.GUI()
+
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -25,7 +32,13 @@ geometry.scale(0.08,0.08,0.08)
 // Materials
 
 const material = new THREE.MeshStandardMaterial()
-material.color = new THREE.Color(0xff0000)
+material.color = new THREE.Color(0x00000)
+// var material=new THREE.MeshStandardMaterial();
+material.metalness=0.2;
+material.roughness=0.08;
+material.normalMap=normalTextureMap;
+
+material.heightTextureMap=heightTextureMap;
 
 // Mesh
 const sphere = new THREE.Mesh(geometry,material)
@@ -33,11 +46,27 @@ scene1.add(sphere)
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xFB722E, 1)
-pointLight.position.x = 2
-pointLight.position.y = 3
-pointLight.position.z = 4
-scene1.add(pointLight)
+//-----------This is initial point light
+
+const pointLight1 = new THREE.PointLight(0xFB722E, 500)
+pointLight1.position.x = 5.7
+pointLight1.position.y = 7
+pointLight1.position.z = -3.1
+scene1.add(pointLight1)
+
+//-----------This is initial point light
+
+const pointLight2 = new THREE.PointLight(0xC25FFD, 900)
+pointLight2.position.x = -100
+pointLight2.position.y = 7
+pointLight2.position.z = -3.1
+pointLight2.scale.z=105
+scene1.add(pointLight2)
+
+
+
+
+
 
 /**
  * Sizes
@@ -75,6 +104,12 @@ scene1.add(camera)
 // Controls
 
 
+//add GUI
+gui.add(pointLight1.position,'x',-10,10).name('sphererotationX')
+gui.add(pointLight1.position,'y',-10,10).name('sphererotationY')
+gui.add(pointLight1.position,'z',-10,10).name('sphererotationZ')
+
+
 /**
  * Renderer
  */
@@ -89,7 +124,6 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  */
 
 const clock = new THREE.Clock()
-
 const tick = () =>
 {
 
@@ -100,6 +134,7 @@ const tick = () =>
 
     // Update Orbital Controls
     // controls.update()
+    sphere.rotation.y += 0.001;
 
     // Render
     renderer.render(scene1, camera)

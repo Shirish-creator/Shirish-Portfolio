@@ -48,6 +48,7 @@ main{
     top: -569px;
     left: -769px;
     z-index: 1;
+    pointer-events: none;
 }
 .test_div{
     background-image: url("../assets/sample.png");

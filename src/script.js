@@ -132,14 +132,28 @@ var controls=new OrbitControls(camera,renderer.domElement);
  * Animate
  */
 
-document.addEventListener('mousedown',()=>{
+window.addEventListener('mousedown',()=>{
     gsap.to(camera.position,{
         z:3,
         duration:1.5
     })
 })
 
-document.addEventListener('mouseup',()=>{
+window.addEventListener('mouseup',()=>{
+    gsap.to(camera.position,{
+        z:2,
+        duration:1.5
+    })
+})
+
+window.addEventListener('touchstart',()=>{
+    gsap.to(camera.position,{
+        z:3,
+        duration:1.5
+    })
+})
+
+window.addEventListener('touchend',()=>{
     gsap.to(camera.position,{
         z:2,
         duration:1.5

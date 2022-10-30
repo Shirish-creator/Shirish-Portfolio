@@ -34,13 +34,22 @@ main{
 }
 
 .loading{
-    display: none;
+    opacity: 1;
     position: fixed;
-    top:0px;
+    top:0;
     z-index: 3;
     background-color: black;
     width: 100%;
     height: 100%;
+    transition: ease 1s;
+    
+}
+
+.loaded{
+    position: fixed;
+    top:-1000px;
+    opacity: 1;
+
 }
 
 .blur_purple_1{

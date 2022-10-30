@@ -131,6 +131,9 @@ var controls=new OrbitControls(camera,renderer.domElement);
 /**
  * Animate
  */
+window.addEventListener('load',()=>{
+    document.querySelector('.loading').classList.add('loaded')
+});
 
 window.addEventListener('mousedown',()=>{
     gsap.to(camera.position,{
@@ -173,10 +176,6 @@ const tick = () =>
     // Update objects
     // sphere.rotation.y = .5 * elapsedTime
     sphere.rotation.y += 0.001;
-
-   
-
-    
 
     // Render
     renderer.render(scene1, camera)

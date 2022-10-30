@@ -3,6 +3,14 @@
 @import "../scss/Custom_pages/Custom.scss";
 @import url(//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended);
 
+
+@font-face {font-family: "Monument Extended Bold";
+    src: url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.eot"); /* IE9*/
+    src: url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.woff2") format("woff2"), /* chrome、firefox */
+    url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.woff") format("woff"), /* chrome、firefox */
+    url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
 *
 {
     margin: 0;
@@ -13,7 +21,11 @@ html,
 body
 {
     color:$white;
-    font-family: 'Monument Extended',sans-serif;
+    font-family:"Monument Extended Bold" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
     background-color: #161515;
 }
 

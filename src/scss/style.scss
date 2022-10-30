@@ -42,7 +42,9 @@ main{
     width: 100%;
     height: 100%;
     // transition:ease-out 1s;
-    -webkit-transition: top 1s ease-in;
+    -webkit-transition: top ease-in-out 1s;
+    -moz-transition: top ease-in-out 1s;
+  -o-transition: top ease-in-out 1s;
     
 }
 

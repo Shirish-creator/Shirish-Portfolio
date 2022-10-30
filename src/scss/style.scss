@@ -10,8 +10,6 @@
 html,
 body
 {
-    
-    height: 100vh;
     color:$white;
     font-family: 'Hando';
     background-color: #161515;
@@ -24,6 +22,7 @@ body
     top:0;
     left: 0;
     outline: none;
+    transition: ease-in-out .5s;
 }
 main{
     position: relative;
@@ -32,6 +31,7 @@ main{
     overflow-x: hidden;
     height: 100vh;
 }
+
 
 .loading{
     opacity: 1;

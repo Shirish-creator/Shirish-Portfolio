@@ -13,7 +13,8 @@ import height from "./assets/textures/Height.jpg"
 //---------------------------------------- V A R I A B L E S --------------------------------------------------------
 const textureLoader=new THREE.TextureLoader()
 const normalTextureMap=textureLoader.load(normal);
-const heightTextureMap=textureLoader.load(height)
+const heightTextureMap=textureLoader.load(height);
+const scrollable=document.querySelector('main');
 
 
 //----- modification to the textures-----------
@@ -131,9 +132,10 @@ var controls=new OrbitControls(camera,renderer.domElement);
 /**
  * Animate
  */
-window.addEventListener('load',()=>{
-    document.querySelector('.loading').classList.add('loaded')
-});
+
+// window.addEventListener('load',()=>{
+//     document.querySelector('.loading').classList.add('loaded')
+// });
 
 window.addEventListener('mousedown',()=>{
     gsap.to(camera.position,{
@@ -149,6 +151,8 @@ window.addEventListener('mouseup',()=>{
     })
 })
 
+
+
 window.addEventListener('touchstart',()=>{
     gsap.to(camera.position,{
         z:3,
@@ -162,6 +166,23 @@ window.addEventListener('touchend',()=>{
         duration:1.5
     })
 })
+
+
+scrollable.addEventListener('scroll',()=>{
+    let t=scrollable.scrollTop;
+let o=1
+sphere.position.z=t*0.005;
+sphere.rotation.z +=t*10;
+if (t>0){
+    o=0*t
+}
+if(t=0){
+    o=1+t;
+}
+console.log(o)
+canvas.style.opacity=o
+})
+
  
 
 const clock = new THREE.Clock()
@@ -176,6 +197,20 @@ const tick = () =>
     // Update objects
     // sphere.rotation.y = .5 * elapsedTime
 
+  
+
+    // function moveCamera(){
+    //     const t=document.body.getBoundingClientRect().top;
+    //     let o=1
+    //     sphere.position.z=t*-0.01;
+    //     sphere.rotation.z +=t*10;
+    //     console.log(t);
+    //     o+=t*10
+    //     canvas.style.opacity= o;
+    // }
+
+    // document.body.onscroll=moveCamera;
+        
     sphere.rotation.y += 0.001;
 
     // Render

@@ -1,7 +1,8 @@
 import './scss/style.scss';
 import * as THREE from 'three';
-// import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import * as dat from 'dat.gui';
+import gsap from 'gsap';
 import normal from "./assets/textures/Normal.png"
 import height from "./assets/textures/Height.jpg"
 
@@ -13,7 +14,6 @@ import height from "./assets/textures/Height.jpg"
 const textureLoader=new THREE.TextureLoader()
 const normalTextureMap=textureLoader.load(normal);
 const heightTextureMap=textureLoader.load(height)
-console.log(normalTextureMap);
 
 
 //----- modification to the textures-----------
@@ -23,7 +23,7 @@ normalTextureMap.repeat.set(10,10);
 
 
 // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 
 // Canvas
@@ -74,7 +74,6 @@ scene1.add(pointLight2)
 
 
 
-
 /**
  * Sizes
  */
@@ -108,13 +107,13 @@ camera.position.y = 0
 camera.position.z = 2
 scene1.add(camera)
 
-// Controls
+
 
 
 //add GUI
-gui.add(pointLight1.position,'x',-10,10).name('sphererotationX')
-gui.add(pointLight1.position,'y',-10,10).name('sphererotationY')
-gui.add(pointLight1.position,'z',-10,10).name('sphererotationZ')
+// gui.add(pointLight1.position,'x',-10,10).name('sphererotationX')
+// gui.add(pointLight1.position,'y',-10,10).name('sphererotationY')
+// gui.add(pointLight1.position,'z',-10,10).name('sphererotationZ')
 
 
 /**
@@ -126,22 +125,44 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
+// Controls
+var controls=new OrbitControls(camera,renderer.domElement);
+
 /**
  * Animate
  */
 
+document.addEventListener('mousedown',()=>{
+    gsap.to(camera.position,{
+        z:3,
+        duration:1.5
+    })
+})
+
+document.addEventListener('mouseup',()=>{
+    gsap.to(camera.position,{
+        z:2,
+        duration:1.5
+    })
+})
+ 
+
 const clock = new THREE.Clock()
 const tick = () =>
 {
-
+        
+    // Update Orbital Controls
+    //-->currently the layer is beaneath the main so the controls don't 'seem' to function
+    controls.update()
     const elapsedTime = clock.getElapsedTime()
 
     // Update objects
     // sphere.rotation.y = .5 * elapsedTime
-
-    // Update Orbital Controls
-    // controls.update()
     sphere.rotation.y += 0.001;
+
+   
+
+    
 
     // Render
     renderer.render(scene1, camera)

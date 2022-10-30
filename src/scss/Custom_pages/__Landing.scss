@@ -1,0 +1,20 @@
+header{
+    z-index: 2;
+    backdrop-filter: blur(8px);
+}
+
+.hero-container{
+    z-index: -1;
+
+    .container{
+        
+
+        .gradient-shade{
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            //this is the gradient at the top acting as a header background --but isn't ofc :)
+            height: 46px;
+            background: linear-gradient(90deg, #FB722E 0%, #C25FFD 100%);
+        }
+    }
+}

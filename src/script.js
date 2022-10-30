@@ -43,7 +43,7 @@ const material = new THREE.MeshStandardMaterial()
 material.color = new THREE.Color(0x00000)
 // var material=new THREE.MeshStandardMaterial();
 material.metalness=0.463;
-material.roughness=0.272;
+material.roughness=0.7;
 material.normalMap=normalTextureMap;
 
 material.heightTextureMap=heightTextureMap;
@@ -54,17 +54,17 @@ scene1.add(sphere)
 
 // Lights
 
-//-----------This is initial point light
+//-----------This is orange point light
 
-const pointLight1 = new THREE.PointLight(0xFB722E, 50)
+const pointLight1 = new THREE.PointLight(0xFB722E, 30)
 pointLight1.position.x = 5.7
 pointLight1.position.y = 7
 pointLight1.position.z = -3.1
 scene1.add(pointLight1)
 
-//-----------This is initial point light
+//-----------This is purple point light
 
-const pointLight2 = new THREE.PointLight(0xC25FFD, 50)
+const pointLight2 = new THREE.PointLight(0xC25FFD, 20)
 pointLight2.position.x = -100
 pointLight2.position.y = 7
 pointLight2.position.z = -3.1
@@ -179,7 +179,7 @@ if (t>0){
 if(t=0){
     o=1+t;
 }
-console.log(o)
+console.log(o);
 canvas.style.opacity=o
 })
 

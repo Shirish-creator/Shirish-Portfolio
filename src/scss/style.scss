@@ -1,5 +1,7 @@
+@import "./Variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import "../scss/Custom_pages/Custom.scss";
+@import url(//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended);
 
 *
 {
@@ -11,7 +13,7 @@ html,
 body
 {
     color:$white;
-    font-family: 'Hando';
+    font-family: 'Monument Extended',sans-serif;
     background-color: #161515;
 }
 
@@ -22,11 +24,11 @@ body
     top:0;
     left: 0;
     outline: none;
-    transition: ease-in-out .5s;
+    transition: ease-in-out 1s;
 }
+
 main{
     position: relative;
-    text-align: center;
     z-index: 2;
     overflow-x: hidden;
     height: 100vh;

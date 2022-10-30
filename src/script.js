@@ -175,6 +175,7 @@ const tick = () =>
 
     // Update objects
     // sphere.rotation.y = .5 * elapsedTime
+
     sphere.rotation.y += 0.001;
 
     // Render

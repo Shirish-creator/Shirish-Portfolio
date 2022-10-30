@@ -1,0 +1,134 @@
+
+
+//this is the header
+
+header{
+    z-index: 2;
+    background: rgba(77, 70, 70, 0.25);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid white;
+    position: fixed;
+    width: 100%;
+
+    nav{
+        align-items: center;
+        padding:.5rem 1rem;
+       
+
+        .Logo{
+            gap: 1rem;
+            align-items: center;
+
+            .Logo-container{
+                height: 2rem;
+                width: 2rem;
+                background-image: url('../../assets/Logo.png');
+                background-size: cover;
+                filter: drop-shadow(0px 4px 6px #b51b00);
+            }
+        } 
+        
+            .links{
+                ul{
+                    gap:4rem;
+                    padding: 0;
+                    margin: 0;
+            
+                    li{
+                        font-family:"NexaLight";
+                        font-size:1rem;
+                        align-items: center;
+
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap:1rem;
+                            transition: ease-in;
+
+                            span{                              
+                                font-family:"NexaBold";
+                                font-weight: 900;
+                                letter-spacing: .05rem;
+                                font-size:1rem
+                            }
+
+                            .send-btn{
+                                border-radius: 100px;
+                                height:32px;
+                                width: 32px;
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 4px #8F18D6;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                svg{
+                                    fill:#FB722E;
+                                    transition: ease-in-out 0.5s;
+                                }
+                            }
+                        }
+
+                        &:hover{
+
+                            a{
+                                text-decoration: underline;
+                            }
+
+                            svg{
+                                transform: translateY(-6px);
+                                filter:drop-shadow(0px 4px 4px #b600c3)
+                            }
+                        }
+                    }
+                    
+                }
+        }
+    }
+}
+
+
+// this is the hero section
+
+.hero-container{
+    z-index: -1;
+
+    .container{        
+        .gradient-shade{
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            //this is the gradient at the top acting as a header background --but isn't ofc :)
+            height: 46px;
+            background: linear-gradient(90deg, #FB722E 0%, #C25FFD 100%);
+        }
+
+        .hero{
+            padding:0 4rem;
+            padding-top: 26rem;
+
+            .hero-title{
+                gap:1rem;
+
+                span{
+                    letter-spacing: 0.425em;
+                    font-family: 'Nexa Light';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+
+                h1{
+                    max-width: 688px;
+                    line-height: 90.6%;
+                }
+
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

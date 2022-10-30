@@ -1,8 +1,10 @@
 @import "./Variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/Custom_pages/Custom.scss";
-@import url(//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended);
 
+
+
+//this isthe monument Extended Bold Font Woff upload////////////////
 
 @font-face {font-family: "Monument Extended Bold";
     src: url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.eot"); /* IE9*/
@@ -11,6 +13,38 @@
     url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.woff") format("woff"), /* chrome、firefox */
     url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   }
+
+  //this isthe Nexa Bold Font Woff upload////////////////
+
+  @font-face {font-family: "NexaBold";
+    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot"); /* IE9*/
+    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), /* chrome、firefox */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), /* chrome、firefox */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+
+
+  //this isthe Nexa Light Font Woff upload////////////////
+
+  @font-face {font-family: "NexaLight";
+    src: url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.eot"); /* IE9*/
+    src: url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.woff2") format("woff2"), /* chrome、firefox */
+    url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.woff") format("woff"), /* chrome、firefox */
+    url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+
+//this isthe Nexa Light Font Woff upload////////////////
+
+  @font-face {font-family: "NexaBold";
+    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot"); /* IE9*/
+    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), /* chrome、firefox */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), /* chrome、firefox */
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+
 *
 {
     margin: 0;
@@ -39,6 +73,21 @@ body
     transition: ease-in-out 1s;
 }
 
+p{
+    font-family:"NexaLight" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
 main{
     position: relative;
     z-index: 2;
@@ -46,6 +95,11 @@ main{
     height: 100vh;
 }
 
+// .Logo-container{
+//     background-image: url('../assets/Logo.png');
+//     background-size: cover;
+//     box-shadow: 1px orangered;
+// }
 
 .loading{
     opacity: 1;
@@ -70,6 +124,12 @@ main{
 
 }
 
+.border-l-r-b{
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
 .blur_purple_1{
     position: absolute;
     top: -569px;
@@ -77,7 +137,4 @@ main{
     z-index: 1;
     pointer-events: none;
 }
-.test_div{
-    background-image: url("../assets/sample.png");
-    width:100px;
-}
+

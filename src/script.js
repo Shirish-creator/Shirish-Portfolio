@@ -1,4 +1,5 @@
 import './scss/style.scss';
+import './scss/Custom_pages/Landing.scss'
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import * as dat from 'dat.gui';
@@ -56,7 +57,7 @@ scene1.add(sphere)
 
 //-----------This is orange point light
 
-const pointLight1 = new THREE.PointLight(0xFB722E, 30)
+const pointLight1 = new THREE.PointLight(0xFB722E, 15)
 pointLight1.position.x = 5.7
 pointLight1.position.y = 7
 pointLight1.position.z = -3.1
@@ -171,7 +172,7 @@ window.addEventListener('touchend',()=>{
 scrollable.addEventListener('scroll',()=>{
     let t=scrollable.scrollTop;
 let o=1
-sphere.position.z=t*0.005;
+sphere.position.z=t*0.002;
 sphere.rotation.z +=t*10;
 if (t>0){
     o=0*t

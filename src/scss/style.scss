@@ -1,6 +1,9 @@
+
 @import "./Variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/Custom_pages/Custom.scss";
+
+
 
 
 
@@ -128,13 +131,39 @@ main{
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
+  padding-bottom: 2rem;
+
+      // Small devices (Potrait phones, 576px and up)
+    
+      @media (min-width: 350px) {
+        padding:0 1rem;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        padding:0 1rem;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        padding:0 1rem;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        padding:0 4rem;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        padding:0 4rem;
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        padding:0 4rem;
+
+    }
 }
 
-.blur_purple_1{
-    position: absolute;
-    top: -569px;
-    left: -769px;
-    z-index: 1;
-    pointer-events: none;
-}
 

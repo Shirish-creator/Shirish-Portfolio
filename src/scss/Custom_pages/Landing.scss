@@ -1,5 +1,5 @@
 
-
+@import "../Variables.scss";
 //this is the header
 
 header{
@@ -60,13 +60,13 @@ header{
                                 height:32px;
                                 width: 32px;
                                 background: #FFFFFF;
-                                box-shadow: 0px 4px 4px #8F18D6;
+                                box-shadow: 0px 4px 4px $primary-vio;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
 
                                 svg{
-                                    fill:#FB722E;
+                                    fill:$primary-orange;
                                     transition: ease-in-out 0.5s;
                                 }
                             }
@@ -80,7 +80,7 @@ header{
 
                             svg{
                                 transform: translateY(-6px);
-                                filter:drop-shadow(0px 4px 4px #b600c3)
+                                filter:drop-shadow(0px 4px 4px $primary-vio)
                             }
                         }
                     }
@@ -101,32 +101,327 @@ header{
             border-left: 1px solid white;
             border-right: 1px solid white;
             //this is the gradient at the top acting as a header background --but isn't ofc :)
-            height: 46px;
-            background: linear-gradient(90deg, #FB722E 0%, #C25FFD 100%);
+            
+            background: linear-gradient(90deg, $primary-orange 0%, $primary-vio 100%);
+
+            // Small devices (Potrait phones, 576px and up)
+    
+            @media (min-width: 350px) {
+                height: 65px;
+            }
+        
+            // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) {
+                height: 65px;
+            }
+        
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+                height: 65px;
+            }
+        
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                height: 49px;
+            }
+        
+            // X-Large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                height: 49px;
+            }
+        
+            // XX-Large devices (larger desktops, 1400px and up)
+            @media (min-width: 1400px) {
+                height: 49px;
+            }
+
         }
 
         .hero{
-            padding:0 4rem;
-            padding-top: 26rem;
+        
+            gap:2rem;
+
+            // Small devices (Potrait phones, 576px and up)
+    
+            @media (min-width: 350px) {
+                padding:0 1rem;
+                padding-top: 26rem;
+                padding-bottom: 2rem;
+
+            }
+        
+            // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) {
+                padding:0 1rem;
+                padding-top: 26rem;
+                padding-bottom: 2rem;
+
+            }
+        
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+                padding:0 1rem;
+                padding-top: 28rem;
+                padding-bottom: 2rem;
+
+            }
+        
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                padding:0 4rem;
+                padding-top: 20rem;
+                padding-bottom: 2rem;
+
+            }
+        
+            // X-Large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                padding:0 4rem;
+                padding-top: 20rem;
+                padding-bottom: 2rem;
+
+            }
+        
+            // XX-Large devices (larger desktops, 1400px and up)
+            @media (min-width: 1400px) {
+                padding:0 4rem;
+                padding-top: 20rem;
+                padding-bottom: 2rem;
+
+            }
+
+            
+            .blur_purple_1{
+                position: absolute;
+                top: -569px;
+                left: -769px;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .sun_light{
+                position: absolute;
+                top: -818px;
+                right: -1185px;
+                z-index: 1;
+                pointer-events: none;
+                transform: scale(0.8);
+            }
 
             .hero-title{
                 gap:1rem;
 
                 span{
                     letter-spacing: 0.425em;
-                    font-family: 'Nexa Light';
+                    font-family: 'NexaLight';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 1rem;
                 }
 
                 h1{
-                    max-width: 688px;
+                  
+                    width: 100%;
                     line-height: 90.6%;
+
+                     // Small devices (Potrait phones, 576px and up)
+    
+                        @media (min-width: 350px) {
+                            font-size: 2rem;
+                            max-width: 330px;
+                        }
+                    
+                        // Small devices (landscape phones, 576px and up)
+                        @media (min-width: 576px) {
+                            font-size: 2rem;
+                            max-width: 330px;
+
+                        }
+                    
+                        // Medium devices (tablets, 768px and up)
+                        @media (min-width: 768px) {
+                            font-size: 3rem;
+                            max-width: 518px;
+
+                        }
+                    
+                        // Large devices (desktops, 992px and up)
+                        @media (min-width: 992px) {
+                            font-size: 4rem;
+                            max-width: 700px;
+                        }
+                    
+                        // X-Large devices (large desktops, 1200px and up)
+                        @media (min-width: 1200px) {
+                            font-size: 4rem;
+                            max-width: 700px;
+                        }
+                    
+                        // XX-Large devices (larger desktops, 1400px and up)
+                        @media (min-width: 1400px) {
+                            font-size: 4rem;
+                            max-width: 700px;
+                        }
                 }
 
                 p{
                     font-size: 1.4rem;
+                }
+            }
+
+            .profile_info_top{
+                // Small devices (Potrait phones, 576px and up)
+    
+                @media (min-width: 350px) {
+                  flex-direction: column;
+                  gap:1rem
+                }
+            
+                // Small devices (landscape phones, 576px and up)
+                @media (min-width: 576px) {
+                    flex-direction: column;
+                    gap:1rem
+
+                }
+            
+                // Medium devices (tablets, 768px and up)
+                @media (min-width: 768px) {
+                    flex-direction: column;
+                  gap:1rem
+
+                }
+            
+                // Large devices (desktops, 992px and up)
+                @media (min-width: 992px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            
+                // X-Large devices (large desktops, 1200px and up)
+                @media (min-width: 1200px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            
+                // XX-Large devices (larger desktops, 1400px and up)
+                @media (min-width: 1400px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .profile_detail{
+                    gap:1rem;
+
+                    .profile_picture{
+                        background-image: url("../../assets/me.jpg");
+                        background-size: cover;
+                        width:66px;
+                        height:66px;
+                        border-radius: 100px;
+                        border:solid 2px white;
+
+                        // Small devices (Potrait phones, 576px and up)
+    
+                        @media (min-width: 350px) {
+                            width:68px;
+                            height:56px;
+                        }
+                    
+                        // Small devices (landscape phones, 576px and up)
+                        @media (min-width: 576px) {
+                            width:68px;
+                            height:56px;
+                        }
+                    
+                        // Medium devices (tablets, 768px and up)
+                        @media (min-width: 768px) {
+                            width:56px;
+                            height:56px;
+
+                        }
+                    
+                        // Large devices (desktops, 992px and up)
+                        @media (min-width: 992px) {
+                            width:66px;
+                            height:66px;
+                        }
+                    
+                        // X-Large devices (large desktops, 1200px and up)
+                        @media (min-width: 1200px) {
+                            width:66px;
+                            height:66px;
+                        }
+                    
+                        // XX-Large devices (larger desktops, 1400px and up)
+                        @media (min-width: 1400px) {
+                            width:66px;
+                            height:66px;
+                        }
+
+                    }
+
+                    .profile_details{
+                        width: 100%;
+                        max-width: 336px;
+                        color:$gray-500;
+                        font-size: 1.2rem;                    
+                    }
+                }
+
+                .social_links{
+                    gap:1rem;
+                    span{
+                        font-family: "NexaLight";
+                        font-size: 1.2rem;
+                    }
+                    ul{
+                        list-style: none;
+                        gap:1rem;
+                        padding:0;
+                        margin: 0;
+
+                        li{
+                            font-size: 0.875rem;
+                        }
+                    }
+
+                        // Small devices (Potrait phones, 576px and up)
+    
+                        @media (min-width: 350px) {
+                          justify-content: left;
+                          text-align: left;
+                        }
+                    
+                        // Small devices (landscape phones, 576px and up)
+                        @media (min-width: 576px) {
+                            justify-content: left;
+                            text-align: left;
+                        }
+                    
+                        // Medium devices (tablets, 768px and up)
+                        @media (min-width: 768px) {
+                            justify-content: left;
+                            text-align: left;
+                        }
+                    
+                        // Large devices (desktops, 992px and up)
+                        @media (min-width: 992px) {
+                            justify-content: right;
+                            text-align: right;
+                        }
+                    
+                        // X-Large devices (large desktops, 1200px and up)
+                        @media (min-width: 1200px) {
+                            justify-content: right;
+                            text-align: right;
+                        }
+                    
+                        // XX-Large devices (larger desktops, 1400px and up)
+                        @media (min-width: 1400px) {
+                            justify-content: right;
+                            text-align: right;
+                        }
+                   
                 }
             }
         }

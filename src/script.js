@@ -1,3 +1,5 @@
+
+import './scss/Variables.scss';
 import './scss/style.scss';
 import './scss/Custom_pages/Landing.scss'
 import * as THREE from 'three';

@@ -2,6 +2,8 @@
 @import "./Variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/Custom_pages/Custom.scss";
+@import "./Custom_pages/custom-components/buttons";
+
 
 
 
@@ -132,6 +134,7 @@ main{
   border-left: 1px solid white;
   border-right: 1px solid white;
   padding-bottom: 2rem;
+  width: 100%;
 
       // Small devices (Potrait phones, 576px and up)
     

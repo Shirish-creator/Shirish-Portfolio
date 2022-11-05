@@ -2,6 +2,8 @@
 import './scss/Variables.scss';
 import './scss/style.scss';
 import './scss/Custom_pages/Landing.scss'
+import './scss/Custom_pages/Inside-landing/_digitalproducts.scss';
+import './scss/Custom_pages/_typography.scss';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import * as dat from 'dat.gui';

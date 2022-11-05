@@ -10,6 +10,7 @@ import * as dat from 'dat.gui';
 import gsap from 'gsap';
 import normal from "./assets/textures/Normal.png"
 import height from "./assets/textures/Height.jpg"
+import "./navigation";
 
 
 
@@ -175,6 +176,8 @@ window.addEventListener('touchend',()=>{
 
 scrollable.addEventListener('scroll',()=>{
     let t=scrollable.scrollTop;
+    
+// console.log(t);
 let o=1
 sphere.position.z=t*0.002;
 sphere.rotation.z +=t*10;
@@ -184,7 +187,7 @@ if (t>0){
 if(t=0){
     o=1+t;
 }
-console.log(o);
+
 canvas.style.opacity=o
 })
 
@@ -203,18 +206,6 @@ const tick = () =>
     // sphere.rotation.y = .5 * elapsedTime
 
   
-
-    // function moveCamera(){
-    //     const t=document.body.getBoundingClientRect().top;
-    //     let o=1
-    //     sphere.position.z=t*-0.01;
-    //     sphere.rotation.z +=t*10;
-    //     console.log(t);
-    //     o+=t*10
-    //     canvas.style.opacity= o;
-    // }
-
-    // document.body.onscroll=moveCamera;
         
     sphere.rotation.y += 0.001;
 

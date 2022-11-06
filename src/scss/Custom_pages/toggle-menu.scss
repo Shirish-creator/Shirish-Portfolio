@@ -7,7 +7,7 @@
     width: 100%;
     position: fixed;
     z-index: 3;
-    right:-100%;
+   
     background: rgba(43, 43, 43, 0.66);
     backdrop-filter: blur(20.5px);
     overflow: hidden;
@@ -71,12 +71,15 @@
     opacity: 1!important;
     pointer-events: all!important;
     right: 0!important;
+    
+
 }
 
 .toggle-inactive{
     border-radius: 1000px 0px 0px 1000px;
-    transition: .5s cubic-bezier(0.79, 0.01, 1, 1);
-    opacity: 1;
+    transition: 0.8s cubic-bezier(0, 0, 0, 1.01);
     pointer-events: none;
+    right: -300%;
+
 }
 

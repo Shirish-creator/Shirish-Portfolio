@@ -22,7 +22,27 @@ const textureLoader=new THREE.TextureLoader()
 const normalTextureMap=textureLoader.load(normal);
 const heightTextureMap=textureLoader.load(height);
 const scrollable=document.querySelector('main');
+var cursor= document.querySelector('.mouse-cursor')
 
+
+
+//function to mouse curosr------------------------------------
+
+window.addEventListener('mousemove',(e)=>{
+   
+
+    cursor.style.top=e.pageY + 'px';
+    cursor.style.left=e.pageX +'px';
+});
+
+window.addEventListener('mousedown',()=>{
+    cursor.style.transform="scale(1.4)";
+   
+});
+
+window.addEventListener('mouseup',()=>{
+    cursor.style.transform="scale(1)";
+})
 
 //----- modification to the textures-----------
 normalTextureMap.wrapS = THREE.RepeatWrapping;

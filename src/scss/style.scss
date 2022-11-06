@@ -66,6 +66,7 @@ body
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     background-color: #161515;
+    cursor: none!important;
 }
 
 
@@ -171,3 +172,56 @@ main{
 }
 
 
+.mouse-cursor{
+    position: fixed;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: none;
+    border: 1px solid white;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+
+       // Small devices (Potrait phones, 576px and up)
+    
+       @media (min-width: 350px) {
+        display: none;    
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        display: none;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        display: block;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        display: block;
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        display: block;
+
+    }
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: $primary-vio;
+  }
+  
+  ::selection {
+    color: black;
+    background: $primary-vio;
+  }

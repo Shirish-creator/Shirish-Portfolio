@@ -13,26 +13,24 @@ var anchor = document.querySelectorAll('.anchor');
 // Convert buttons NodeList to an array
 var anchorsArray = Array.from(anchor);
 
+//navlink scroll function
+function navfunc(n){
+    let id= n.target.id;
+    window.scrollTo(0,200)
+
+    if(id==="works"){
+     el.scrollTop=725
+    }
+    else{
+     el.scrollTop=0
+    }
+    togSection.classList.remove('toggle-active') 
+};
 
 
 
 anchor.forEach(occurence=>{
-    occurence.addEventListener('click',(n)=>{
-        
-       let id= n.target.id;
-       console.log(id)
-       window.scrollTo(0,200)
-
-       if(id==="works"){
-        el.scrollTop=725
-       }
-       else{
-        el.scrollTop=0
-       }
-    //    if(id="about"){
-    //     el.scrollTop=920
-    //    }
-    })
+    occurence.addEventListener('click',navfunc)
 })
 
 ham.addEventListener('click',()=>{

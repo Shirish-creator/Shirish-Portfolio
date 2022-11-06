@@ -12,6 +12,7 @@ import normal from "./assets/textures/Normal.png"
 import height from "./assets/textures/Height.jpg"
 import "./navigation";
 import "./scss/Custom_pages/toggle-menu.scss";
+import "./../src/Works.html"
 
 
 

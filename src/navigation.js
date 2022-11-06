@@ -18,12 +18,17 @@ function navfunc(n){
     let id= n.target.id;
     window.scrollTo(0,200)
 
+    if(id==="about" | id==="home"){
+        el.scrollTop=0
+    }
     if(id==="works"){
-     el.scrollTop=725
+        el.scrollTop=725
     }
-    else{
-     el.scrollTop=0
+    if(id==="contact"){
+        el.scrollTop=1400  
     }
+   
+    
     togSection.classList.remove('toggle-active') 
 };
 

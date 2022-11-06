@@ -1,5 +1,9 @@
 
 var el=document.querySelector('main');
+var ham=document.querySelector('.ham-menu');
+var hamClose=document.querySelector('.close-ham');
+var togSection=document.querySelector('.toggle-menu-section');
+
 el.scrollTop = 0;
 el.scrollLeft = 0;
 var anchor = document.querySelectorAll('.anchor');
@@ -29,4 +33,12 @@ anchor.forEach(occurence=>{
     //     el.scrollTop=920
     //    }
     })
+})
+
+ham.addEventListener('click',()=>{
+    togSection.classList.add('toggle-active') 
+})
+
+hamClose.addEventListener('click',()=>{
+    togSection.classList.remove('toggle-active') 
 })

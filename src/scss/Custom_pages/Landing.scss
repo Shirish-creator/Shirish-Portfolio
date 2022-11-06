@@ -88,7 +88,7 @@ header{
                 }
 
                 .ham-menu{
-                    display: none;
+                    display: block;
                 }
 
                 // Small devices (Potrait phones, 576px and up)
@@ -100,6 +100,12 @@ header{
 
                 .ham-menu{
                     display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg{
+                        transform: scale(1.3);
+                    }
                 }
             }
         

@@ -288,6 +288,8 @@ main{
     background-size: cover;
     border: none;
     transform: scale(8)!important;
+    mix-blend-mode: difference;
+
 }
 
 ::-moz-selection { /* Code for Firefox */

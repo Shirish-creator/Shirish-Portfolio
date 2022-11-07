@@ -1,17 +1,25 @@
 
 import './scss/Variables.scss';
 import './scss/style.scss';
+
+//custom pages
+import "./scss/Custom_pages/toggle-menu.scss";
 import './scss/Custom_pages/Landing.scss'
 import './scss/Custom_pages/Inside-landing/_digitalproducts.scss';
 import './scss/Custom_pages/_typography.scss';
+
+//three js
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import * as dat from 'dat.gui';
 import gsap from 'gsap';
 import normal from "./assets/textures/Normal.png"
 import height from "./assets/textures/Height.jpg"
+
+//javascript
 import "./navigation";
-import "./scss/Custom_pages/toggle-menu.scss";
+import "./Mouseenter";
+
 
 
 

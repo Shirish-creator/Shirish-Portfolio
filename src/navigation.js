@@ -21,11 +21,12 @@ function navfunc(n){
     if(id==="about" | id==="home"){
         el.scrollTop=0
     }
+    if(id==="contact"){
+        el.scrollTop=1900  
+    }
+   
     if(id==="works"){
         el.scrollTop=725
-    }
-    if(id==="contact"){
-        el.scrollTop=1400  
     }
    
     

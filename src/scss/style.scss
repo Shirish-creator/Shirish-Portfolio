@@ -242,10 +242,13 @@ main{
     width: 20px;
     height: 20px;
     border-radius: 100px;
-    background-color: none;
+    background: transparent;
+    transform: rotate(0deg);
     border: 1px solid white;
-    transform: translate(-50%,-50%);
     pointer-events: none;
+    transition: .3s transform ease-in-out;
+
+    
 
        // Small devices (Potrait phones, 576px and up)
     
@@ -278,6 +281,13 @@ main{
         display: block;
 
     }
+}
+
+.mouse-cursor-case{
+    background-image: url("../assets/CASE\ STUDY\ IMAGE.png")!important;
+    background-size: cover;
+    border: none;
+    transform: scale(8)!important;
 }
 
 ::-moz-selection { /* Code for Firefox */

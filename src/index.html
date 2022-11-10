@@ -31,6 +31,20 @@
             }
 
         </script>
+
+        <style>
+
+        .box {
+        display: inline-block;
+        background:transparent;
+        background-size: cover;
+        }
+
+        .canvas {
+        background: transparent;
+        }
+
+        </style>
 <body id="body" onload=display_ct()>
     <canvas class="webgl"></canvas>
     <div class="toggle-menu-section toggle-inactive">
@@ -294,23 +308,30 @@
                     </p>
                 </div>
             </div> 
-            <div class="designs-grid-container">
-                <div class="designs-grid">
-                    <div class="design" id="design-0"><img src="https://i.ibb.co/r4ZHkfC/valentine-choclate-1.png" alt="choclate"></div>
+            <div class="designs-grid-container position-relative" style="overflow:hidden ;">
+                <div class="tips position-absolute">
+                    <h5>Tip:</h5>
+                    <p>Somethings just need a TAP for magic to happen</p>
+                </div>
+                
+                <div class="eraseable-content position-relative" >
+                    <div class="box" style="overflow:hidden">
+                        <canvas id="canvas">hello</canvas>
+                    </div>
+                    <div class="designs-grid" style="pointer-events:none;">
+                    <div class="design " id="design-0"><img src="https://i.ibb.co/r4ZHkfC/valentine-choclate-1.png" alt="choclate"></div>
                     <div class="design" id="design-1"><img src="https://i.ibb.co/fq9t1X9/Booklet.png" alt="Booklet design"></div>
                     <div class="design" id="design-2"><img src="https://i.ibb.co/tMGvw5P/Basanta.png" alt="Basanta poster"></div>
                     <div class="design" id="design-3"><img src="https://i.ibb.co/Kz3MLg6/nft.png" alt="NFT"></div>
                     <div class="design" id="design-4"><img src="https://i.ibb.co/pn8gBW8/Posters.png" alt="company posters"></div>
         
                 </div>
+            </div>
             </div>               
         </div>
         
-    </section>     
+    </section>   
+     
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        //this is for the eraser effect 
-    </script>
 </body>
 </html>

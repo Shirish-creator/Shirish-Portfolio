@@ -21,6 +21,7 @@ import height from "./assets/textures/Height.jpg"
 import "./navigation";
 import "./Mouseenter";
 import "./Imagehover";
+import "./BGeraser";
 
 
 //bootstrap javascripts;
@@ -47,14 +48,14 @@ window.addEventListener('mousemove',(e)=>{
     cursor.style.left=e.pageX + (-10) +'px';
 });
 
-window.addEventListener('mousedown',()=>{
-    cursor.style.transform="scale(1.4)";
+// window.addEventListener('mousedown',()=>{
+//     cursor.style.transform="scale(1.4)";
    
-});
+// });
 
-window.addEventListener('mouseup',()=>{
-    cursor.style.transform="scale(1)";
-})
+// window.addEventListener('mouseup',()=>{
+//     cursor.style.transform="scale(1)";
+// })
 
 
 //----- modification to the textures-----------

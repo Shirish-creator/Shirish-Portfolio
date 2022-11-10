@@ -35,21 +35,6 @@ const heightTextureMap=textureLoader.load(height);
 const scrollable=document.querySelector('main');
 var cursor= document.querySelector('.mouse-cursor')
 
-//---------- time and date--------------
-
-function display_c(){
-    var refresh=1000; // Refresh rate in milli seconds
-    mytime=setTimeout('display_ct()',refresh)
-      
-}
-
-function display_ct() {
-    var x = new Date()
-    document.querySelector('.time').innerHTML = x;
-    display_c();
-    }
-
-
 
 //function to mouse curosr------------------------------------
 
@@ -62,16 +47,16 @@ window.addEventListener('mousemove',(e)=>{
 
 window.addEventListener('mousedown',()=>{
     cursor.style.transform="scale(1.4)";
-    cursor.classList.add('mouse-cursor-press')
    
 });
 
 window.addEventListener('mouseup',()=>{
     cursor.style.transform="scale(1)";
-    cursor.classList.remove('mouse-cursor-press')
 })
 
+
 //----- modification to the textures-----------
+
 normalTextureMap.wrapS = THREE.RepeatWrapping;
 normalTextureMap.wrapT = THREE.RepeatWrapping;
 normalTextureMap.repeat.set(10,10);

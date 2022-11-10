@@ -18,12 +18,13 @@
         width: 200px;
         gap: 1rem;
         padding: 1rem;
-        top:30%;
+        top:50%;
         z-index: 2;
-        left: 25%;
+        left: 50%;
         color: white;
         pointer-events: none;
         text-align: center;
+        transform: translate(-50%, -50%);
 
         
        // Small devices (Potrait phones, 576px and up)

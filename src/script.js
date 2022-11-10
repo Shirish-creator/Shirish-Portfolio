@@ -21,6 +21,9 @@ import "./navigation";
 import "./Mouseenter";
 
 
+//bootstrap javascripts;
+import "../node_modules/bootstrap/js/src/modal"
+
 
 
 
@@ -32,6 +35,20 @@ const heightTextureMap=textureLoader.load(height);
 const scrollable=document.querySelector('main');
 var cursor= document.querySelector('.mouse-cursor')
 
+//---------- time and date--------------
+
+function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+      
+}
+
+function display_ct() {
+    var x = new Date()
+    document.querySelector('.time').innerHTML = x;
+    display_c();
+    }
+
 
 
 //function to mouse curosr------------------------------------
@@ -39,17 +56,19 @@ var cursor= document.querySelector('.mouse-cursor')
 window.addEventListener('mousemove',(e)=>{
    
 
-    cursor.style.top=e.pageY + 'px';
-    cursor.style.left=e.pageX +'px';
+    cursor.style.top=e.pageY + (-10) +'px';
+    cursor.style.left=e.pageX + (-10) +'px';
 });
 
 window.addEventListener('mousedown',()=>{
     cursor.style.transform="scale(1.4)";
+    cursor.classList.add('mouse-cursor-press')
    
 });
 
 window.addEventListener('mouseup',()=>{
     cursor.style.transform="scale(1)";
+    cursor.classList.remove('mouse-cursor-press')
 })
 
 //----- modification to the textures-----------

@@ -1,7 +1,8 @@
 
 @import "./Variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./Custom_pages/custom-components/buttons";
+@import "./Custom_pages/custom-components/Custom_Components.scss";
+
 
 
 
@@ -40,15 +41,15 @@
     url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   }
 
-//this isthe Nexa Light Font Woff upload////////////////
+// //this isthe Nexa Light Font Woff upload////////////////
 
-  @font-face {font-family: "NexaBold";
-    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot"); /* IE9*/
-    src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), /* chrome、firefox */
-    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), /* chrome、firefox */
-    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  }
+//   @font-face {font-family: "NexaBold";
+//     src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot"); /* IE9*/
+//     src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+//     url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), /* chrome、firefox */
+//     url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), /* chrome、firefox */
+//     url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//   }
 
 *
 {
@@ -66,9 +67,6 @@ body
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     background-color: #161515;
-    cursor: none!important;
-
-
 }
 
 
@@ -289,7 +287,11 @@ main{
     border: none;
     transform: scale(8)!important;
     mix-blend-mode: difference;
+    
+}
 
+.mouse-cursor-press{
+    filter: drop-shadow(0px 4px 4px #FB722E) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 8px 14px #FF7236);
 }
 
 ::-moz-selection { /* Code for Firefox */

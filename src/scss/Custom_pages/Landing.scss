@@ -456,6 +456,7 @@ header{
                         gap:1rem;
                         padding:0;
                         margin: 0;
+                        justify-content: end;
 
                         li{
                             font-size: 0.875rem;
@@ -467,36 +468,72 @@ header{
                         @media (min-width: 350px) {
                           justify-content: left;
                           text-align: left;
+
+                          ul{
+                           
+                            justify-content: start;
+     
+                        }
                         }
                     
                         // Small devices (landscape phones, 576px and up)
                         @media (min-width: 576px) {
                             justify-content: left;
                             text-align: left;
+
+                            ul{
+                           
+                                justify-content: start;
+         
+                            }
                         }
                     
                         // Medium devices (tablets, 768px and up)
                         @media (min-width: 768px) {
                             justify-content: left;
                             text-align: left;
+
+                            ul{
+                           
+                                justify-content: start;
+         
+                            }
                         }
                     
                         // Large devices (desktops, 992px and up)
                         @media (min-width: 992px) {
                             justify-content: right;
                             text-align: right;
+
+                            ul{
+                           
+                                justify-content: end;
+         
+                            }
                         }
                     
                         // X-Large devices (large desktops, 1200px and up)
                         @media (min-width: 1200px) {
                             justify-content: right;
                             text-align: right;
+
+                            ul{
+                           
+                                justify-content: end;
+         
+                            }
                         }
                     
                         // XX-Large devices (larger desktops, 1400px and up)
                         @media (min-width: 1400px) {
                             justify-content: right;
                             text-align: right;
+
+                            ul{
+                           
+                                justify-content: end;
+         
+                            }
                         }
                    
                 }
@@ -504,3 +541,51 @@ header{
         }
     }
 }
+   .container-header-img{
+    width: 150px;
+       // Small devices (Potrait phones, 576px and up)
+
+    @media (min-width: 350px) {
+        display: none;          
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        display: none;          
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        display: flex;          
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        display: flex;          
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        display: flex;          
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        display: flex;          
+    }
+
+    img{
+        transform: translateX(-42px);
+    }
+
+}
+
+.container-title{
+    overflow: hidden;
+
+}
+.container-header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+     gap:1rem;
+ }

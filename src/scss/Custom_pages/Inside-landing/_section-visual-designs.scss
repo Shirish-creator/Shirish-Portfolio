@@ -27,10 +27,20 @@
             .design{
                 height: 350px;  
                 overflow: hidden;
+                transition: ease 0.4s;
+                transform-origin: center;
                 img{
                     height: 100%;
                     width: 100%;
+                   
 
+                }
+
+                &:hover{
+                    
+                        
+                        box-shadow: 0px 12px 65px #000000;
+                   
                 }
             }
             #design-2{
@@ -54,7 +64,7 @@
                 .design{
                     height: 178px; 
                     img{
-                        height: 178px; 
+                        height: 100%; 
                     }
                     
                        
@@ -103,7 +113,7 @@
                 .design{
                     height: 280px; 
                     img{
-                        height: 280px; 
+                        height: 100%; 
                     }
                     
                        

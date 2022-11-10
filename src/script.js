@@ -6,6 +6,7 @@ import './scss/style.scss';
 import "./scss/Custom_pages/toggle-menu.scss";
 import './scss/Custom_pages/Landing.scss'
 import './scss/Custom_pages/Inside-landing/_digitalproducts.scss';
+import './scss/Custom_pages/Inside-landing/_section-visual-designs.scss';
 import './scss/Custom_pages/_typography.scss';
 
 //three js

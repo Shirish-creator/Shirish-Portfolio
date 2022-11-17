@@ -30,7 +30,6 @@ module.exports = {
         
         [
 
-
             // HTML
             {
                 test: /\.(html)$/,
@@ -72,22 +71,19 @@ module.exports = {
             // Fonts
             {
                 test: /\.(ttf|eot|woff|woff2)$/,
-                // use:
-                // [
-                //     {
-                //         loader: 'file-loader',
-                //         options:
-                //         {
-                //             outputPath: 'assets/fonts/'
-                //         }
-                //     }
-                // ]
+              
                 loader: 'file-loader',
                 options: {
                   outputPath: 'assets/fonts/',
                 },
 
-            }
+            },
+
+            //Xlsx
+            { test: /\.xlsx$/, loader: "webpack-xlsx-loader",
+            options:{
+            outputPath:'assets/database'
+        } }
         ]
     }
 }

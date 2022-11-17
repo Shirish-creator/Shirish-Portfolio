@@ -20,7 +20,7 @@ import height from "./assets/textures/Height.jpg"
 //javascript
 import "./navigation";
 import "./Mouseenter";
-import "./Imagehover";
+import "./exceldatabase"
 import "./BGeraser";
 
 

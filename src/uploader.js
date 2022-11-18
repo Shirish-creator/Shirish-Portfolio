@@ -1,39 +1,29 @@
-import horse from "./assets/videos/horsenft.mp4"
+// import horse from "./assets/videos/horsenft.mp4"
 
-// var horsevideo=document.querySelector(".videhorse")
 
-// function loadvideo(){
-//     var video = document.getElementsByTagName('video')[0];
+// var video = document.getElementById('thevideo');
+// var source = document.querySelector(".videhorse");
 
-//     horsevideo.src=horse;
-//     video.load();
-// }
+// source.setAttribute('src', horse);
+// source.setAttribute('type', 'video/mp4');
 
-// loadvideo()
+// video.appendChild(source);
+// video.play();
+// console.log({
+//   src: source.getAttribute('src'),
+//   type: source.getAttribute('type'),
+// });
 
-var video = document.getElementById('thevideo');
-var source = document.querySelector(".videhorse");
+// setTimeout(function() {
+//   video.pause();
 
-source.setAttribute('src', horse);
-source.setAttribute('type', 'video/mp4');
+//   source.setAttribute('src', horse);
+//   source.setAttribute('type', 'video/webm');
 
-video.appendChild(source);
-video.play();
-console.log({
-  src: source.getAttribute('src'),
-  type: source.getAttribute('type'),
-});
-
-setTimeout(function() {
-  video.pause();
-
-  source.setAttribute('src', horse);
-  source.setAttribute('type', 'video/webm');
-
-  video.load();
-  video.play();
-  console.log({
-    src: source.getAttribute('src'),
-    type: source.getAttribute('type'),
-  });
-}, 3000);
+//   video.load();
+//   video.play();
+//   console.log({
+//     src: source.getAttribute('src'),
+//     type: source.getAttribute('type'),
+//   });
+// }, 3000);

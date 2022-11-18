@@ -34,12 +34,38 @@ module.exports = {
             {
                 test: /\.(html)$/,
                 use: {
-                    loader: "html-loader",
+                    loader: "html-loader?attrs[]=video:src",
                     options: {
-                      attrs: [":src"]
-                    }
+                        sources: {
+                          list: [
+                            // All default supported tags and attributes
+                            "...",
+                            {
+                              tag: "img",
+                              attribute: "data-src",
+                              type: "src",
+                            },
+                            {
+                              tag: "img",
+                              attribute: "data-srcset",
+                              type: "srcset",
+                            },
+                          ],
+                          urlFilter: (attribute, value, resourcePath) => {
+                            // The `attribute` argument contains a name of the HTML attribute.
+                            // The `value` argument contains a value of the HTML attribute.
+                            // The `resourcePath` argument contains a path to the loaded HTML file.
+              
+                            if (/example\.pdf$/.test(value)) {
+                              return false;
+                            }
+              
+                            return true;
+                          },
+                        },
+                      },
                 
-            },
+            }},
 
             // JS
             {
@@ -64,7 +90,7 @@ module.exports = {
 
             //Images
             {
-                test: /\.(mp4|png|jpe?g|gif)$/,
+                test: /\.(png|jpe?g|gif)$/,
                 loader: 'file-loader',
                 options: {
                   outputPath: 'assets/images/',
@@ -89,6 +115,9 @@ module.exports = {
             options:{
             outputPath:'assets/database'
         } },
+
+        { test: /\.(mov|mp4)$/, loader: 'url-loader'},
+
     //     {
     //         test: /\.mp4$/,
     //         loader: 'file-loader',

@@ -8,6 +8,7 @@ import './scss/Custom_pages/Landing.scss'
 import './scss/Custom_pages/Inside-landing/_digitalproducts.scss';
 import './scss/Custom_pages/Inside-landing/_section-visual-designs.scss';
 import './scss/Custom_pages/_typography.scss';
+import './scss/Custom_pages/Inside-landing/_3dWorks.scss'
 
 //three js
 import * as THREE from 'three';

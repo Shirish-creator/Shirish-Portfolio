@@ -1,29 +1,31 @@
 import horse from "./assets/videos/horsenft.mp4"
+import porsche from "./assets/videos/porsche.mp4"
+
+let videos=document.querySelectorAll('.threeDvideo')
+var source = document.querySelectorAll(".videosource");
+
+console.log(source)
+
+for(let n=0;n<2;n++){
+    let VideoID=videos[n].id;
+    
+    if(VideoID==="nft"){
+        
+        source[n].setAttribute('src', horse);
+        source[n].setAttribute('type', 'video/mp4');
+        console.log(source[n].setAttribute,"horse")
+        
 
 
-var video = document.getElementById('thevideo');
-var source = document.querySelector(".videhorse");
+    }
+    if(VideoID==="porsche"){
+        source[n].setAttribute('src', porsche);
+        source[n].setAttribute('type', 'video/mp4'); 
+        console.log(source[n].setAttribute,"porsche")
+        
 
-source.setAttribute('src', horse);
-source.setAttribute('type', 'video/mp4');
+    }
+    videos[n].appendChild(source[n]);
+}
 
-video.appendChild(source);
-video.play();
-console.log({
-  src: source.getAttribute('src'),
-  type: source.getAttribute('type'),
-});
 
-setTimeout(function() {
-  video.pause();
-
-  source.setAttribute('src', horse);
-  source.setAttribute('type', 'video/webm');
-
-  video.load();
-  video.play();
-  console.log({
-    src: source.getAttribute('src'),
-    type: source.getAttribute('type'),
-  });
-}, 3000);

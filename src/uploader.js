@@ -1,5 +1,5 @@
 import horse from "./assets/videos/horsenft.mp4"
-import porsche from "./assets/videos/porsche.mp4"
+import porsche from "./assets/videos/car.mp4"
 
 let videos=document.querySelectorAll('.threeDvideo')
 // var source = document.querySelectorAll(".videosource");

@@ -118,14 +118,7 @@ module.exports = {
 
         { test: /\.(mov|mp4)$/, loader: 'url-loader'},
 
-    //     {
-    //         test: /\.mp4$/,
-    //         loader: 'file-loader',
-    //         options:{
-                
-    //             outputPath:'assets/videos'
-    //         }
-    //  },
+   
         ]
     }
 }

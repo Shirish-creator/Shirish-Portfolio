@@ -23,7 +23,8 @@ import "./navigation";
 import "./Mouseenter";
 import "./exceldatabase"
 import "./BGeraser";
-import "./uploader"
+import "./uploader";
+import "./scrollparallax"
 
 
 //bootstrap javascripts;

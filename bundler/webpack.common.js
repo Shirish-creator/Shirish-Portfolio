@@ -33,7 +33,12 @@ module.exports = {
             // HTML
             {
                 test: /\.(html)$/,
-                use: ['html-loader']
+                use: {
+                    loader: "html-loader",
+                    options: {
+                      attrs: [":src"]
+                    }
+                
             },
 
             // JS
@@ -59,7 +64,7 @@ module.exports = {
 
             //Images
             {
-                test: /\.(png|jpe?g|gif)$/,
+                test: /\.(mp4|png|jpe?g|gif)$/,
                 loader: 'file-loader',
                 options: {
                   outputPath: 'assets/images/',
@@ -83,7 +88,15 @@ module.exports = {
             { test: /\.xlsx$/, loader: "webpack-xlsx-loader",
             options:{
             outputPath:'assets/database'
-        } }
+        } },
+    //     {
+    //         test: /\.mp4$/,
+    //         loader: 'file-loader',
+    //         options:{
+                
+    //             outputPath:'assets/videos'
+    //         }
+    //  },
         ]
     }
 }

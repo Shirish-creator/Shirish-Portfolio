@@ -84,16 +84,21 @@ p{
                     height: 100%;
                 }
 
+                .invisible{
+                    display: flex
+                }
+
                  // Small devices (Potrait phones, 576px and up)
     
             @media (min-width: 350px) {
-                width: 150px;
-                height: 150px;
+                width: 200px;
+                height: 200px;
                 padding: .5rem;
                 
 
                 .invisible{
-                    display: none;
+                    display: none!important
+                    ;
                 }
             }
         
@@ -158,11 +163,11 @@ p{
             // transition: transform ease-in .5s;
         }
         .model-row2{
-            transform: translateX(-100px);
+            // transform: translateX(-100px);
 
                // Small devices (landscape phones, 576px and up)
                @media (min-width: 350px) {
-                transform: translateX(-166px);
+                // transform: translateX(-166px);
             }
         }
     }

@@ -102,6 +102,7 @@ main{
     overflow-x: hidden;
     height: 100vh;
     scroll-behavior: smooth;
+    width: 100vw;
 
     
       // Small devices (Potrait phones, 576px and up)
@@ -312,3 +313,10 @@ main{
     color: black;
     background: $primary-vio;
   }
+
+
+//   footer{
+//     background-color: white;
+//     color: black;
+//     width: 100vw;
+//   }

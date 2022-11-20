@@ -16,7 +16,6 @@ for(let n=0;n<2;n++){
         
         Source.setAttribute('src', horse);
         Source.setAttribute('type', 'video/mp4');
-        console.log(Source.setAttribute,"horse")
         
 
 
@@ -24,7 +23,6 @@ for(let n=0;n<2;n++){
     if(VideoID==="porsche"){
         Source.setAttribute('src', porsche);
         Source.setAttribute('type', 'video/mp4'); 
-        console.log(Source.setAttribute,"porsche")
         
 
     }

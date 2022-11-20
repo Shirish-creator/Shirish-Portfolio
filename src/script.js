@@ -25,6 +25,8 @@ import "./exceldatabase"
 import "./BGeraser";
 import "./uploader";
 import "./scrollparallax"
+import "./footer";
+import "./projectanimate"
 
 
 //bootstrap javascripts;

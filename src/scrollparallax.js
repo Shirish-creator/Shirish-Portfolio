@@ -10,9 +10,10 @@ if(window.innerWidth>990){
             let top=scrollable.scrollTop
             t=top+i*.1  
             let x=t/1000;
+            // console.log(t)
+
             // console.log(x) 
             if(t>3100){
-                // console.log(t)
                 // console.log("point reached")
                     first.style.transform="translateX(-"+(x*1)*25+"px)"
                     second.style.transform="translateX(-"+(x/1)*100+"px)"
@@ -21,5 +22,8 @@ if(window.innerWidth>990){
         }
     })
 }
+
+
+
 
 

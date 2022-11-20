@@ -16,18 +16,13 @@ var anchorsArray = Array.from(anchor);
 //navlink scroll function
 function navfunc(n){
     let id= n.target.id;
+    window.scrollTo(0,200)
 
     if(id==="about" | id==="home"){
         el.scrollTop=0
     }
     if(id==="contact"){
-        if(window.innerWidth<500){
-            el.scrollTop=5200 
-        }else{
-            el.scrollTop=6000 
-
-        }
-        
+        el.scrollTop=1900  
     }
    
     if(id==="works"){

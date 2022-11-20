@@ -1,6 +1,6 @@
 //magic footer
 
-// var main=document.querySelector(".main")
+var main=document.querySelector(".main")
 var observer= new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
       if(entry.isIntersecting){

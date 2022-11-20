@@ -26,8 +26,10 @@
             var H=d.getHours(); 
             var M=d.getMinutes(); 
             var S= d.getSeconds();    
+            var D=d.getFullYear()
 
             document.querySelector('.time').innerHTML = H + ":"+ M +":" + S + " " + "(Local Time)";
+            document.querySelector('.dated').innerHTML=D;
             display_c();
             }
 
@@ -380,7 +382,7 @@
                     <div class="threeD" id="threeD-3"><img src="https://i.ibb.co/RBzCRfD/PSG.png" alt="PSG"></div>
                     <div class="threeD invisible" id="threeD-0"></div>
                 </div>
-                <div class="model-row2 d-flex flex-row">
+                <div class="model-row2 d-flex flex-row ">
                     <div class="threeD invisible" id="threeD-0"></div>
                     <div class="threeD " id="threeD-0"><img src="https://i.ibb.co/ZNyMWQh/logistics.png" alt="Iron Man"></div>
                     <div class="threeD" id="threeD-2"><video class="threeDvideo" id="porsche" autoplay loop muted plays-inline>  
@@ -395,10 +397,36 @@
                 </div>
             </div>
         </div>
+        
     </section>
-    <section style="height: 1000px;"> 
-        helo
-    </section>
+    <footer> 
+        <div class="container">
+            <div class="footer-wrapper d-flex flex-row justify-content-between">
+                <div class="foot-content d-flex flex-column">
+                    <div class="footer-contents d-flex flex-column">
+                        <h1>RETURNING HOME ALREADY?</h1>
+                        <span>We can still keep in touch though...</span>
+                    </div>
+
+                    <div class="contact d-flex flex-column">
+                        <p>shirish.shakya5@gmail.com</p>
+                        <span>+977-9869134750</span>
+                    </div>
+                </div>
+                <div class="image-container position-relative">
+                    <!-- <a href="https://ibb.co/dmjh5nL"><img src="https://i.ibb.co/wcBvzDw/astro.png" alt="astro" border="0"></a> -->
+                    <img class="position-absolute astro" src="https://i.ibb.co/wcBvzDw/astro.png" alt="astro" >
+
+                    
+                </div>
+            </div>
+            <div class="copyrights d-flex flex-row justify-content-between">
+                <span>Designed and Developed with love and threejs</span>
+                <p>© Shirish Shakya.<span class="dated"> 2022</span></p>
+                <span>All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
      
     </main>
 </body>

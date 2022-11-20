@@ -26,7 +26,7 @@ import "./BGeraser";
 import "./uploader";
 import "./scrollparallax"
 import "./footer";
-import "./projectanimate"
+import "./projectanimate";
 
 
 //bootstrap javascripts;

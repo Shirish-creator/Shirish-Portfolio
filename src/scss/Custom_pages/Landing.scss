@@ -657,9 +657,11 @@ footer{
                 width: 100%;
                 .footer-contents{
                     gap:1rem;
+                    text-align: center;
+
                     h1{
                         font-size: 2.5rem;
-                        max-width: 300px;
+                        max-width: 600px;
                         line-height: 2.5rem;
                     }
     
@@ -669,12 +671,17 @@ footer{
                     }
                 
                 }
+                .contact{
+                    text-align: center;
+
+                }
             }
 
             .image-container{
                 width: 100%;
                 img{
-                    transform: translateX(-28px);
+                    width: 130%;
+                    transform: translateX(-60px);
 
                 }
             }  
@@ -698,9 +705,10 @@ footer{
                 width: 100%;
                 .footer-contents{
                     gap:1rem;
+                    text-align: center;
                     h1{
                         font-size: 2.5rem;
-                        max-width: 300px;
+                        max-width: 600px;
                         line-height: 2.5rem;
                     }
     
@@ -710,12 +718,17 @@ footer{
                     }
                 
                 }
+                .contact{
+                    text-align: center;
+
+                }
             }
 
             .image-container{
                 width: 100%;
                 img{
-                    transform: translateX(-30px);
+                    width: 130%;
+                    transform: translateX(-60px);
 
                 }
             }  
@@ -736,11 +749,13 @@ footer{
 
             .foot-content{
                 width: 50%;
+                text-align: left!important;
+
                 .footer-contents{
                     gap:1rem;
                     h1{
                         font-size: 2.5rem;
-                        max-width: 300px;
+                        max-width: 400px;
                         line-height: 2.5rem;
                     }
     
@@ -750,11 +765,16 @@ footer{
                     }
                 
                 }
+                .contact{
+                    text-align: left;
+
+                }
             }
 
             .image-container{
                 width: 50%;
                 img{
+                    width: 960%;
                     transform: translateX(-456px);
 
                 }
@@ -777,6 +797,8 @@ footer{
                 width: 100%;
                 .footer-contents{
                     gap:1rem;
+                    text-align: left;
+
                     h1{
                         font-size: 3.5rem;
                         max-width: 630px;
@@ -789,11 +811,16 @@ footer{
                     }
                 
                 }
+                .contact{
+                    text-align: left;
+
+                }
             }
 
             .image-container{
                 width: 100%;
                 img{
+                    width: 120%;
                     transform: translateX(0px);
 
                 }
@@ -815,6 +842,8 @@ footer{
                 width: 100%;
                 .footer-contents{
                     gap:1rem;
+                    text-align: left;
+
                     h1{
                         font-size: 3.5rem;
                         max-width: 630px;
@@ -827,11 +856,16 @@ footer{
                     }
                 
                 }
+                .contact{
+                    text-align: left;
+
+                }
             }
 
             .image-container{
                 width: 100%;
                 img{
+                    width: 100%;
                     transform: translateX(0px);
 
                 }
@@ -853,6 +887,8 @@ footer{
                 width: 100%;
                 .footer-contents{
                     gap:1rem;
+                    text-align: left;
+
                     h1{
                         font-size: 3.5rem;
                         max-width: 630px;
@@ -865,11 +901,18 @@ footer{
                     }
                 
                 }
+
+                .contact{
+                    text-align: left;
+
+                }
             }
 
             .image-container{
                 width: 100%;
                 img{
+                    width: 100%;
+
                   transform: translateX(0px);
                 }
             }  

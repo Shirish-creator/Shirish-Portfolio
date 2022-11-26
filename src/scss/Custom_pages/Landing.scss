@@ -628,7 +628,7 @@ footer{
         .image-container{
             width: 50%;
             img{
-                bottom:-260px;
+                bottom:-360px;
                 z-index: -1;
                 animation: 6s ease-in-out makewhite infinite;
             }
@@ -940,13 +940,13 @@ footer{
 
   @keyframes makewhite {
     0% {
-        bottom:-200px;
+        bottom:-130px;
 }
     50% {
-      bottom:-160px
+      bottom:-100px
     }
 
     100%{
-        bottom:-200px;
+        bottom:-130px;
     }
   }

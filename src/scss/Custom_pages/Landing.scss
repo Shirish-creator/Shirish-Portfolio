@@ -268,19 +268,21 @@ header{
             
             .blur_purple_1{
                 position: absolute;
-                top: -569px;
-                left: -769px;
+                top: -188px;
+                left: -363px;
                 z-index: 1;
                 pointer-events: none;
+                transform: scale(2);
+
             }
 
             .sun_light{
                 position: absolute;
-                top: -818px;
-                right: -1185px;
+                top: -171px;
+                right: -433px;
                 z-index: 1;
                 pointer-events: none;
-                transform: scale(0.8);
+                transform: scale(2);
             }
 
             .hero-title{

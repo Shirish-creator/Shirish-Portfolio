@@ -1,3 +1,5 @@
+//htmls
+// import "./about.html"
 
 import './scss/Variables.scss';
 import './scss/style.scss';
@@ -27,10 +29,13 @@ import "./uploader";
 import "./scrollparallax"
 import "./footer";
 import "./projectanimate";
-
+// import "./hello"
 
 //bootstrap javascripts;
 import "../node_modules/bootstrap/js/src/modal"
+
+
+
 
 
 

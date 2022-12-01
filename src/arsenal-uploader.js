@@ -24,10 +24,21 @@ scrollable.addEventListener('scroll',()=>{
         // let x=t/1000;
         // console.log(t)
 
-        if(t>=2100){
-            video.play()
-            console.log("video is played")
+        if(window.innerWidth>900){
+            if(t>2650){
+                video.play()
+                console.log("video is played")
+            }
         }
+        
+        if(window.innerWidth<500){
+            if(t>=2100){
+                video.play()
+                console.log("video is played")
+            }
+        }
+
+        
         
        
     }

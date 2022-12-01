@@ -12,6 +12,7 @@ import "./scss/Custom_pages/aboutpage.scss"
 
 //js
 import "./aboutscroll"
+import "./arsenal-uploader"
 
 // rotation-text
 

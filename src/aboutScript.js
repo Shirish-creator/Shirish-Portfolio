@@ -13,8 +13,10 @@ import "./scss/Custom_pages/aboutpage.scss"
 //js
 import "./aboutscroll"
 
+// rotation-text
 
 var purplesection=document.querySelector('.about-hero')
+
 
 var cursor= document.querySelector('.mouse-cursor')
 var purple=document.querySelector('.blur_purple_1')

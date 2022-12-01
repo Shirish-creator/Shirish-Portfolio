@@ -1,0 +1,103 @@
+@import "../../Variables.scss";
+
+
+.about-video{
+    pointer-events: none;
+    .video-slideshow{
+
+        .video-show{
+            margin-top: -6rem;
+                width: 1000px;
+                height: fit-content;
+
+                .gif-area{
+                    background-color:$primary-vio ;
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 100%;
+                    position: relative;
+                    right: -900px;
+                    top:266px;
+
+                      // Small devices (Potrait phones, 576px and up)
+    
+      @media (min-width: 350px) {
+        right: -220px;
+        top:110px;    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        right: -220px;
+        top:110px;}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        right: -600px;
+        top:110px    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        right: -900px;
+        top:266px;    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        right: -900px;
+        top:266px;    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        right: -900px;
+        top:266px;
+    }
+                    
+                    .planet-area{
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        height: 100px;
+                        width: 100px;
+                        overflow: hidden;
+                        border-radius: 100%;
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                    .rotation-text{
+                        position: absolute;
+                        mix-blend-mode: darken;
+                        animation: rotatetext 10s linear infinite;
+                        transform: scale(1.2) rotate(90deg)                       
+                    }
+                }
+            img{
+                width: 100%;
+            }
+        }
+      
+    }
+}
+
+@keyframes rotatetext {
+    0%{
+        transform: scale(1.2) rotate(90deg)                       
+    }
+
+    
+
+    50%{
+        transform: scale(1.2) rotate(180deg)                       
+    }
+
+    
+
+    100%{
+        transform: scale(1.2) rotate(275deg)                       
+    }
+    
+    
+}
+.about-me{
+    background-color: $primary-orange;
+    height: 1000px;
+}

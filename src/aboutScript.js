@@ -7,10 +7,12 @@ import './scss/style.scss';
 
 import popper from "../node_modules/bootstrap/js/src/popover"
 
-console.log(popper)
-
 //scss
 import "./scss/Custom_pages/aboutpage.scss"
+
+//js
+import "./aboutscroll"
+
 
 var purplesection=document.querySelector('.about-hero')
 
@@ -29,7 +31,7 @@ window.addEventListener('mousemove',(e)=>{
     // purple.style.left=e.pageX + (-400) +'px';
 });
 
-purplesection.addEventListener('mousemove',(e)=>{
+window.addEventListener('mousemove',(e)=>{
    
 
     purple.style.top=e.pageY + (-400) +'px';

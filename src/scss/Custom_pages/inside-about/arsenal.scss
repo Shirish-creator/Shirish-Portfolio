@@ -34,6 +34,8 @@
             font-size: 1rem;
             max-width: 300px;
             color: #c7c7c7;
+            line-height: 1.4rem;
+
         }
     }
 
@@ -48,6 +50,8 @@
             font-size: 1.2rem;
             max-width: 400px;
             color: #c7c7c7;
+            line-height: 1.6rem;
+
         }
     }
 
@@ -62,6 +66,8 @@
             font-size: 1.5rem;
             max-width: 400px;
             color: #c7c7c7;
+            line-height: 1.8rem;
+
         }
     }
 
@@ -77,6 +83,8 @@
             color: #565656;
             font-size: 1.625rem;
             max-width: 600px;
+            line-height: 2.2rem;
+
         }
 
     }
@@ -93,6 +101,8 @@
             color: #565656;
             font-size: 1.625rem;
             max-width: 600px;
+            line-height: 2.2rem;
+
         }
 
     }
@@ -108,7 +118,9 @@
         p{
             color: #565656;
             font-size: 1.625rem;
-            max-width: 600px;
+            max-width: 560px;
+            line-height: 2rem;
+
         }
 
     }
@@ -128,7 +140,7 @@
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {
         width: 200%;
-        transform: translateX(-100px);
+        transform: translateX(-334px)
 
     }
 

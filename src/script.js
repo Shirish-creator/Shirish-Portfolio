@@ -1,3 +1,5 @@
+//htmls
+// import "./about.html"
 
 import './scss/Variables.scss';
 import './scss/style.scss';
@@ -8,6 +10,7 @@ import './scss/Custom_pages/Landing.scss'
 import './scss/Custom_pages/Inside-landing/_digitalproducts.scss';
 import './scss/Custom_pages/Inside-landing/_section-visual-designs.scss';
 import './scss/Custom_pages/_typography.scss';
+import './scss/Custom_pages/Inside-landing/_3dWorks.scss'
 
 //three js
 import * as THREE from 'three';
@@ -22,10 +25,19 @@ import "./navigation";
 import "./Mouseenter";
 import "./exceldatabase"
 import "./BGeraser";
+import "./uploader";
+import "./scrollparallax"
+import "./footer";
+import "./projectanimate";
+// import "./hello"
 
+import "./loader";
 
 //bootstrap javascripts;
 import "../node_modules/bootstrap/js/src/modal"
+
+
+
 
 
 

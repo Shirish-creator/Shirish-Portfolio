@@ -4,25 +4,39 @@ var ham=document.querySelector('.ham-menu');
 var hamClose=document.querySelector('.close-ham');
 var togSection=document.querySelector('.toggle-menu-section');
 
+// var as=document.querySelectorAll('.Logo')
+// console.log(as[1])
+
+// as[1].addEventListener('click',()=>{
+//     console.log('licked')
+// })
+
+
 el.scrollTop = 0;
 el.scrollLeft = 0;
 var anchor = document.querySelectorAll('.anchor');
 
-// console.log(anchor)
 
 // Convert buttons NodeList to an array
 var anchorsArray = Array.from(anchor);
 
 //navlink scroll function
 function navfunc(n){
-    let id= n.target.id;
-    window.scrollTo(0,200)
 
-    if(id==="about" | id==="home"){
-        el.scrollTop=0
+    let id= n.target.id;
+
+    if(id==="home"){
+        el.scrollTop=0;
+
     }
     if(id==="contact"){
-        el.scrollTop=1900  
+        if(window.innerWidth<500){
+            el.scrollTop=5200 
+        }else{
+            el.scrollTop=6000 
+
+        }
+        
     }
    
     if(id==="works"){

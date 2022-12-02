@@ -31,6 +31,8 @@ import "./footer";
 import "./projectanimate";
 // import "./hello"
 
+import "./loader";
+
 //bootstrap javascripts;
 import "../node_modules/bootstrap/js/src/modal"
 

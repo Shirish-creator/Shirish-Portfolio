@@ -1,0 +1,84 @@
+.loader{
+    // style="position: fixed;z-index:3;background-color: black;height: 100vh;width: 100%;"
+    position: fixed;
+    z-index:3;background-color: #161515;height: 100vh;width: 100%;
+    top:0;
+
+    h1{
+        font-size:10rem;
+        word-wrap:normal;
+        line-height: 10rem;
+        
+    }
+                  // Small devices (Potrait phones, 576px and up)
+    
+                  @media (min-width: 350px) {
+                   h1{
+                    font-size:3rem;
+
+                    width: 300px;
+                   }
+                }
+            
+                // Small devices (landscape phones, 576px and up)
+                @media (min-width: 576px) {
+                    h1{                    
+                        font-size:3rem;
+
+                        width: 300px;
+                       }
+                    }
+                // Medium devices (tablets, 768px and up)
+                @media (min-width: 768px) {
+                    h1{
+                        font-size:5rem;
+
+                        width: 300px;
+                       }
+                    }
+            
+                // Large devices (desktops, 992px and up)
+                @media (min-width: 992px) {
+                    h1{
+                        font-size:8rem;
+
+                        width: 100%;
+                       }
+                       }
+            
+                // X-Large devices (large desktops, 1200px and up)
+                @media (min-width: 1200px) {
+                    h1{
+                        font-size:10rem;
+
+                        width: 100%;
+                       }
+                      }
+            
+                // XX-Large devices (larger desktops, 1400px and up)
+                @media (min-width: 1400px) {
+                    h1{
+                        font-size:10rem;
+
+                        width: 100%;
+                       }
+                }
+};
+
+.loaded{
+    animation:3s ease-in-out loadit
+
+}
+
+@keyframes loadit {
+    0%{
+        top:0;  
+    }
+    75%{
+        top:0;
+    }
+    100%{
+        top:-100%
+
+    }
+}

@@ -2,7 +2,9 @@
     // style="position: fixed;z-index:3;background-color: black;height: 100vh;width: 100%;"
     position: fixed;
     z-index:3;background-color: #161515;height: 100vh;width: 100%;
-    top:0;
+    // top:0;
+    animation:3s ease-in-out loadit;
+        top:-100%;
 
     h1{
         font-size:10rem;
@@ -65,10 +67,9 @@
                 }
 };
 
-.loaded{
-    animation:3s ease-in-out loadit
-
-}
+// .loaded{
+    
+// }
 
 @keyframes loadit {
     0%{
@@ -78,7 +79,8 @@
         top:0;
     }
     100%{
-        top:-100%
+        top:-100%;
+        
 
     }
 }

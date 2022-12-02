@@ -181,28 +181,9 @@ main{
 
 
 
-.loading{
-    opacity: 1;
-    position: fixed;
-    top:0;
-    z-index: 3;
-    background-color: rgb(24, 24, 24);
-    width: 100%;
-    height: 100%;
-    transition:ease-out 1s;
-//     -webkit-transition: top ease-in-out 1s;
-//     -moz-transition: top ease-in-out 1s;
-//   -o-transition: top ease-in-out 1s;
-    
-}
 
-.loaded{
-    position: fixed;
-    top:-100%;
-    opacity: 1;
-    z-index: 3;
 
-}
+
 
 .border-l-r-b{
   border-bottom: 1px solid white;

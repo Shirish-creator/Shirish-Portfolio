@@ -8,7 +8,30 @@
     <title>Shirish - About</title>
     <link rel="icon" type="image/x-icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/314541792_577870877351356_5957186771622315824_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=u_olMuCmVgkAX_xU1GZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTVF-d0zRxLjMQRzXBxcGK7IkhNp2goY33AcADQ3vdOKw&oe=638F3735">
 </head>
-<body>
+<!-- this is the script for time -->
+
+<script>
+    function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+    
+}
+
+function display_ct() {
+    
+    var d = new Date(); 
+    var H=d.getHours(); 
+    var M=d.getMinutes(); 
+    var S= d.getSeconds();    
+    var D=d.getFullYear()
+
+    // document.querySelector('.time').innerHTML = H + ":"+ M +":" + S + " " + "(Local Time)";
+    document.querySelector('.dated').innerHTML=D;
+    display_c();
+    }
+
+</script>
+<body onload=display_ct()>
     <div class="mouse-cursor"></div>
 
 <main>
@@ -51,8 +74,7 @@
                         </div>
                         <img src="https://i.ibb.co/tLqZTbT/rotate-circle.png" alt="rotate-circle" class="rotation-text" border="0">
                     </div>
-                    <img src="https://i.ibb.co/2dsW3hj/showframe.jpg" alt="showframe" border="0"></div>
-                
+                <video class="prof-video" autoplay loop  plays-inline></video>                
             </div>
         </section>
         <section>
@@ -105,7 +127,24 @@ I’ve wore many hats, creative designer, art director, creative art director, U
 
             </div>
         </section>
-        <section style="margin-top: -10px;">hello</section>
+        <section class="experience-section" ><div class="background">
+            <h2 class="">MY EXPERIENCE</h2>
+            <ul class="experience-table">
+                <li><span>2021 - now</span><span>Proshore</span><span>UX Design, Frontend</span></li>
+                <li><span>2020 - 2021</span><span>Swivt</span><span>Creative Director</span></li>
+                <li><span>2018 - 2020</span><span>Waayu Studios </span><span>UX designer</span></li>
+
+            </ul>
+        </div></section>
+        <footer>
+            <div class="container">
+            <div class="copyrights d-flex flex-row justify-content-between">
+                <span>Designed and Developed with love and threejs</span>
+                <p>© Shirish Shakya.<span class="dated"> </span></p>
+                <span>All Rights Reserved</span>
+            </div>
+        </div>
+        </footer>
     
 
     <!-- <section style="height: 900px;background-color:black">hello</section> -->

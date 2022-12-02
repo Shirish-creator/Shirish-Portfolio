@@ -2,6 +2,8 @@
 
 import './scss/Variables.scss';
 import './scss/style.scss';
+import profile from "./assets/videos/profile.mp4"
+
 
 //bootstrap
 
@@ -40,3 +42,22 @@ window.addEventListener('mousemove',(e)=>{
     purple.style.top=e.pageY + (-400) +'px';
     purple.style.left=e.pageX + (-400) +'px';
 });
+
+// 
+
+
+
+let video=document.querySelector('.prof-video');
+// console.log(video)
+let Source=document.createElement("source")
+
+
+
+function profileVid(){
+    video.appendChild(Source);
+    Source.setAttribute('src', profile);
+        Source.setAttribute('type', 'video/mp4');
+
+}
+
+profileVid();

@@ -3,6 +3,7 @@
 import './scss/Variables.scss';
 import './scss/style.scss';
 import profile from "./assets/videos/profile.mp4"
+import "../src/scss/Custom_pages/loader.scss"
 
 
 //bootstrap

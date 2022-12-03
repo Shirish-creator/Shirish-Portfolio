@@ -1,9 +1,12 @@
+@import "../Variables.scss";
+
 #preloader{
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    width: 100vw;
     height: 100vh;
     z-index: 100;
     background-color: #0f0f0f;
@@ -11,8 +14,10 @@
 
 }
 #percent{
+    
     color: white;
     font-family: 'NexaLight';
+    font-size: 1.5rem;
 }
 #bar{
     width: 60%;
@@ -26,6 +31,58 @@
 #barconfrm{
     width: 1%;
     padding: 1px 0px;
-    background-color: white;
+    background: linear-gradient(90deg, #FB722E 0%, #C25FFD 100%);   
 
+}
+
+.rocket{
+    position: absolute;
+    z-index: 2;
+
+    // Small devices (Potrait phones, 576px and up)
+    
+    @media (min-width: 350px) {
+        margin-top: -300px;
+      width: 300px;
+      }
+  
+      // Small devices (landscape phones, 576px and up)
+      @media (min-width: 576px) {
+        margin-top: -300px;
+
+        width: 300px;
+
+      }
+  
+      // Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) {
+        margin-top: -300px;
+
+        width: 400px;
+
+      }
+  
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 992px) {
+        margin-top: 0px;
+
+        width: 600px;
+
+      }
+  
+      // X-Large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) {
+        margin-top: 0px;
+
+        width: 700px;
+
+      }
+  
+      // XX-Large devices (larger desktops, 1400px and up)
+      @media (min-width: 1400px) {
+        margin-top: 0px;
+
+        width: 700px;
+
+      }
 }

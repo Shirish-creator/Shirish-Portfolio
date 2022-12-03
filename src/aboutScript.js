@@ -3,7 +3,7 @@
 import './scss/Variables.scss';
 import './scss/style.scss';
 import profile from "./assets/videos/profile.mp4"
-import "../src/scss/Custom_pages/loader.scss"
+
 
 
 //bootstrap
@@ -62,3 +62,39 @@ function profileVid(){
 }
 
 profileVid();
+
+var target=document.querySelector('body')
+var scrollable=document.querySelector('main')
+var about=document.querySelector('.about-me')
+
+
+// function scroll(){
+console.log(scrollable);
+
+// }
+
+scrollable.addEventListener('scroll',()=>{
+    for (let i=0;i<=100;i++){
+        let top=scrollable.scrollTop
+        
+        // let x=t/1000;
+        console.log(top)
+        if(top>=200){
+            target.classList.add('body-orange')
+        }
+        if(top<200){
+            target.classList.remove('body-orange')
+        }
+        if(top>=2000){
+            about.classList.add('about-me-dark')
+            target.classList.add('body-dark')
+
+        }
+        if(top<2000){
+            about.classList.remove('about-me-dark')
+            target.classList.remove('body-dark')
+        }
+
+       
+    }
+})

@@ -12,8 +12,8 @@ import { EasePack } from 'gsap/all';
             zIndex: -1
         });
         tll.to("#preloader",{
-            duration: .8,
-            width: "0%",
+            duration: 1,
+            opacity:0
         });
         tll.to(".rocket",{
             duration:0.05,

@@ -308,4 +308,9 @@
 .about-me-dark{
     background-color: #161515;
     color:white;
+
+    span{
+        color: #201f1f;
+        transition: color .5s ease-in;
+    }
 }

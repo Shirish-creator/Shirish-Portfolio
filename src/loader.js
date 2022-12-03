@@ -1,4 +1,8 @@
+import rocket from "../src/assets/rocket.gif"
 
+let contain=document.querySelector('.rocket')
+
+contain.src=rocket;
 
 import gsap from 'gsap';
 import { EasePack } from 'gsap/all';

@@ -12,8 +12,9 @@
     src: url("../assets/fonts/Monument_Extended_Ultrabold/@font-face/a4745f4b1d04fa025c6a05d891ed0126.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../assets/fonts/Monument_Extended_Ultrabold/@font-face/a4745f4b1d04fa025c6a05d891ed0126.woff2") format("woff2"), /* chrome、firefox */
     url("../assets/fonts/Monument_Extended_Ultrabold/@font-face/a4745f4b1d04fa025c6a05d891ed0126.woff") format("woff"), /* chrome、firefox */
-    url("../assets/fonts/Monument_Extended_Ultrabold/@font-face/a4745f4b1d04fa025c6a05d891ed0126.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  }
+    url("../assets/fonts/Monument_Extended_Ultrabold/@font-face/a4745f4b1d04fa025c6a05d891ed0126.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
 
 
 
@@ -25,8 +26,10 @@
     src: url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.woff2") format("woff2"), /* chrome、firefox */
     url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.woff") format("woff"), /* chrome、firefox */
-    url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  }
+    url("../assets/fonts/Monument_Extended_Bold/@font-face/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+  
+}
 
   //this isthe Nexa Bold Font Woff upload////////////////
 
@@ -35,8 +38,10 @@
     src: url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), /* chrome、firefox */
     url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), /* chrome、firefox */
-    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  }
+    url("../assets/fonts/NexaBold/@font-face/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+
+    }
 
 
   //this isthe Nexa Light Font Woff upload////////////////
@@ -46,8 +51,10 @@
     src: url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.woff2") format("woff2"), /* chrome、firefox */
     url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.woff") format("woff"), /* chrome、firefox */
-    url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  }
+    url("../assets/fonts/NexaLight/@font-face/086d543873365bb6afb5c90eabb7c3e8.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+
+}
 
 // //this isthe Nexa Light Font Woff upload////////////////
 
@@ -76,8 +83,17 @@ body
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     background-color: #161515;//this is the main background-color
+    transition: background-color .5s ease-in;
 }
 
+.body-orange{
+    background-color: $primary;//this is the main background-color
+
+}
+
+.body-dark{
+    background-color: #161515
+}
 
 .webgl
 {   
@@ -181,28 +197,9 @@ main{
 
 
 
-.loading{
-    opacity: 1;
-    position: fixed;
-    top:0;
-    z-index: 3;
-    background-color: rgb(24, 24, 24);
-    width: 100%;
-    height: 100%;
-    transition:ease-out 1s;
-//     -webkit-transition: top ease-in-out 1s;
-//     -moz-transition: top ease-in-out 1s;
-//   -o-transition: top ease-in-out 1s;
-    
-}
 
-.loaded{
-    position: fixed;
-    top:-1000px;
-    opacity: 1;
-    z-index: 3;
 
-}
+
 
 .border-l-r-b{
   border-bottom: 1px solid white;

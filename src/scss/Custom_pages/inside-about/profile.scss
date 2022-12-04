@@ -102,11 +102,13 @@
     
     
 }
+
 .about-me{
     background-color: $primary-orange;
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
+    transition: background-color .5s ease-in;
 
 
 
@@ -302,4 +304,13 @@
         }
 
        
+}
+.about-me-dark{
+    background-color: #161515;
+    color:white;
+
+    span{
+        color: #201f1f;
+        transition: color .5s ease-in;
+    }
 }

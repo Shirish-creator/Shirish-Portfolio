@@ -78,7 +78,7 @@ scrollable.addEventListener('scroll',()=>{
         let top=scrollable.scrollTop
         
         // let x=t/1000;
-        console.log(top)
+        // console.log(top)
         if(top>=200){
             target.classList.add('body-orange')
         }

@@ -69,7 +69,6 @@ var about=document.querySelector('.about-me')
 
 
 // function scroll(){
-console.log(scrollable);
 
 // }
 

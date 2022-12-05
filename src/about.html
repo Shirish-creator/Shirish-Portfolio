@@ -28,7 +28,16 @@ function display_ct() {
     var D=d.getFullYear()
 
     // document.querySelector('.time').innerHTML = H + ":"+ M +":" + S + " " + "(Local Time)";
-    document.querySelector('.dated').innerHTML=D;
+
+    let dateD=document.querySelectorAll('.dated')
+            // console.log(dateD[1])
+
+            for(let n=0 ; n<1; n++){
+                dateD[n].innerHTML=D
+
+                
+            }
+
     display_c();
     }
 
